@@ -2,5 +2,6 @@
 
 node("master") {
   def vars = gitVars()
-  echo vars.getCommit()
+  echo vars.commit
+  echo vars.shortCommit
 }
