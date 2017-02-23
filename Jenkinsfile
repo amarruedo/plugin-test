@@ -5,5 +5,5 @@ node("master") {
   def vars = gitVars()
   echo vars.commit
   echo vars.shortCommit
-  echo vars.buildNumber
+  echo vars.buildNumber.toString()
 }
