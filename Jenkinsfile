@@ -10,5 +10,8 @@ node("master") {
   if(vars.release.isPresent)
   {
     echo vars.release.version
+    echo vars.release.versionNoPrefix
+    echo vars.release.versionShort
+    echo vars.release.versionShortNoPrefix
   }
 }
