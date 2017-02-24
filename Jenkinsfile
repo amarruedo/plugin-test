@@ -1,7 +1,7 @@
 #!groovy
 
 node("macOS-sierra") {
-  delete()
+  deleteDir()
   checkout scm
   def vars = gitVars()
   echo vars.commit
