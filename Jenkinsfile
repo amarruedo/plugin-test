@@ -1,6 +1,6 @@
 #!groovy
 
-node("master") {
+node("macOS-sierra") {
   checkout scm
   def vars = gitVars()
   echo vars.commit
