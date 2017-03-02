@@ -3,7 +3,7 @@
 node("macOS-sierra") {
   deleteDir()
   checkout scm
-  def vars = gitVars()
+  def vars = gitParams()
   echo vars.commit
   echo vars.shortCommit
   echo vars.buildNumber.toString()
