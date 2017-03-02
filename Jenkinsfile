@@ -8,7 +8,7 @@ node("macOS-sierra") {
   echo vars.shortCommit
   echo vars.buildNumber.toString()
 
-  stage("release" + (vars.release.isPresent ? "-" + vars.release.stage : "")){
+  stage("release" + (vars.release.isPresent ? (vars.release.stage != "" ? "-" + vars.release.stage) : "")){
     if(vars.release.isPresent)
     {
       echo vars.release.version
